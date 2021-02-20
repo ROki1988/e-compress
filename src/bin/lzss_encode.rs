@@ -54,7 +54,7 @@ fn elements_in_array(check_elements: &[char], elements: &[char]) -> Option<usize
     elements
         .windows(check_elements.len())
         .enumerate()
-        .fold(None, |acc, (pos, x)| {
-            acc.or_else(|| (check_elements == x).then(|| pos))
+        .find_map(|(pos, x)| {
+            (check_elements == x).then(|| pos)
         })
 }
