@@ -1,1 +1,1 @@
-# [The Hitchhiker's Guide to Compression](https://go-compression.github.io/)
+impl lzss in [The Hitchhiker's Guide to Compression](https://go-compression.github.io/)
